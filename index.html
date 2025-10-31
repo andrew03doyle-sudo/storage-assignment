@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Name Saver — HTML5 Local Storage</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <h1 id="heading">Welcome, User!</h1>
+
+      <div class="controls">
+        <label for="username" class="visually-hidden">Your name</label>
+        <input
+          id="username"
+          type="text"
+          placeholder="Enter your name..."
+          autocomplete="name"
+          maxlength="40"
+        />
+
+        <div class="buttons">
+          <button id="save-btn" type="button">Save Name</button>
+          <button id="clear-btn" type="button" class="secondary">Clear Name</button>
+        </div>
+      </div>
+
+      <p id="display-name" class="display" aria-live="polite"></p>
+    </main>
+  </body>
+</html>
